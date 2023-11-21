@@ -1,2 +1,2 @@
 # travel-app
-Aplicativo de viagens para implementar quarkus, microserviços, docker e kubernetes
+Aplicativo de viagens para implementar quarkus, monolito, docker e kubernetes
