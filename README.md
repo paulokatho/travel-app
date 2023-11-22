@@ -1,4 +1,3 @@
-
 # travel-app-monolito
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
@@ -15,6 +14,17 @@ It's recommended to setup MySQL as a Docker container for local development purp
 docker run --name app-travel-monolito-mysql -p 3306:3306 -e MYSQL_DATABASE=`travel-app-mono` -e MYSQL_USER=travel-app-mono -e MYSQL_PASSWORD=travel-app-mono -e MYSQL_ROOT_PASSWORD=admin -d mysql:latest
 ```
 > **_NOTE:_** If you specified a different username and/or password, remember to update in ```application.properties```.
+
+### PostgreSQL
+This application requires PostgreSQL (standalone or in a Docker container).
+
+It's recommended to setup PostgreSQL as a Docker container for local development purposes. You can do this with the following command:
+
+```
+sudo docker run --name app-travel-postgres -p 5432:5432 -e POSTGRES_DB=`travel-app-postgres` -e POSTGRES_USER=travel-app-postgres -e POSTGRES_PASSWORD=travel-app-postgres -e MYSQL_ROOT_PASSWORD=admin -d postgres:latesT
+```
+> **_NOTE:_** If you specified a different username and/or password, remember to update in ```application.properties```.
+
 
 ## Running the application in dev mode
 
