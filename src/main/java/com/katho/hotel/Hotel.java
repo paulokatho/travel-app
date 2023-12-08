@@ -12,4 +12,5 @@ public class Hotel extends PanacheEntity {
     public static Hotel findByTravelOrderId(Long travelOrderId) {
         return find("travelOrderId", travelOrderId).firstResult();
     }
+
 }
