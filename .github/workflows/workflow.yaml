@@ -18,3 +18,14 @@ jobs:
                   java-version: '17'
             - name: Build project
               run: mvn clean package -DskipTests
+
+        deploy-dev:
+          runs-on: ubuntu-latest
+          environment:
+              name: dev
+              url: 'katho-mau.com'
+          needs: build
+          steps:
+              - name: Run a one-line script
+                run: echo Deploy Katho Dev
+
