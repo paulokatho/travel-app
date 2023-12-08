@@ -19,5 +19,6 @@ jobs:
                   java-version: '17'
                   distribution: 'temurin'
                   cache: maven
+
             - name: Build project
               run: mvn clean install -DskipTests
