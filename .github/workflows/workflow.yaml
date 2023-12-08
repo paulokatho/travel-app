@@ -23,7 +23,7 @@ jobs:
       runs-on: ubuntu-latest
       environment:
           name: dev
-          url: 'katho.com'
+          url: 'https://paulokatho.com.br'
       needs: build
       steps:
           - name: Run a one-line script
